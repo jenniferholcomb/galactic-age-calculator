@@ -8,9 +8,9 @@ export default class Calculator {
     this.age = age;
   }
 
-  // getMercuryAge(value) {
-  //   return this.age * value;
-  // }
+  getGalacticAge(value) {
+    return this.age * value;
+  }
 
   // getVenusAge(value) {
   //   return this.age * value;
