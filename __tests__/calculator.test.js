@@ -13,19 +13,23 @@ describe('Calculator', () => {
     expect(calculator.age).toEqual(50);
   });
 
-  test('should return user age in Mercury years', () => {
-    expect(calculator.getMercuryAge(.24)).toEqual(12);
+  test('should return user age in Galactic years', () => {
+    const mercury = .24;
+    const venus = .62;
+    const mars = 1.88;
+    const jupiter = 11.86;
+    expect(calculator.getGalacticAge(mercury)).toEqual(12);
   });
 
-  test('should return user age in Venus years', () => {
-    expect(calculator.getVenusAge(.62)).toEqual(31);
-  });
+  // test('should return user age in Venus years', () => {
+  //   expect(calculator.getVenusAge(.62)).toEqual(31);
+  // });
 
-  test('should return user age in Mars years', () => {
-    expect(calculator.getMarsAge(1.88)).toEqual(94);
-  });
+  // test('should return user age in Mars years', () => {
+  //   expect(calculator.getMarsAge(1.88)).toEqual(94);
+  // });
 
-  test('should return user age in Jupiter years', () => {
-    expect(calculator.getJupiterAge(11.86)).toEqual(593);
-  });
+  // test('should return user age in Jupiter years', () => {
+  //   expect(calculator.getJupiterAge(11.86)).toEqual(593);
+  // });
 });

@@ -8,21 +8,21 @@ export default class Calculator {
     this.age = age;
   }
 
-  getMercuryAge(value) {
-    return this.age * value;
-  }
+  // getMercuryAge(value) {
+  //   return this.age * value;
+  // }
 
-  getVenusAge(value) {
-    return this.age * value;
-  }
+  // getVenusAge(value) {
+  //   return this.age * value;
+  // }
 
-  getMarsAge(value) {
-    return this.age * value;
-  }
+  // getMarsAge(value) {
+  //   return this.age * value;
+  // }
 
-  getJupiterAge(value) {
-    return this.age * value;
-  }
+  // getJupiterAge(value) {
+  //   return this.age * value;
+  // }
 }
 
 
