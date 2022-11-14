@@ -2,6 +2,10 @@ export default class Calculator {
 
   constructor() {
     this.age = 0;
+    this.mercuryAge = [];
+    this.venusAge = [];
+    this.marsAge = [];
+    this.jupiterAge = [];
   }
 
   setAge(age) {

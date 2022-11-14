@@ -21,9 +21,9 @@ describe('Calculator', () => {
     expect(calculator.getGalacticAge(mercury)).toEqual(12);
   });
 
-  // test('should return user age in Venus years', () => {
-  //   expect(calculator.getVenusAge(.62)).toEqual(31);
-  // });
+  test('should return user age in Venus years', () => {
+     expect(calculator.getVenusAge(.62)).toEqual(31);
+  });
 
   // test('should return user age in Mars years', () => {
   //   expect(calculator.getMarsAge(1.88)).toEqual(94);
