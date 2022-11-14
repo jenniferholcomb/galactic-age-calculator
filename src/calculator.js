@@ -7,6 +7,8 @@ export default class Calculator {
   setAge(age) {
     this.age = age;
   }
+
+  
 }
 
 
