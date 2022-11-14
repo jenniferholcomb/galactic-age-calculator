@@ -5,5 +5,6 @@ describe('Calculator', () => {
 
   beforeEach(() => {
     calculator = new Calculator();
+    calculator.setAge(50);
   })
 })

@@ -3,6 +3,10 @@ export default class Calculator {
   constructor() {
     this.age = 0;
   }
+
+  setAge(age) {
+    this.age = age;
+  }
 }
 
 
