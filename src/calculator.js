@@ -1,7 +1,7 @@
 export default class Calculator {
 
   constructor() {
-    
+    this.age = 0;
   }
 }
 
