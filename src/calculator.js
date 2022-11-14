@@ -17,31 +17,10 @@ export default class Calculator {
     this.venusAge.age = this.age * this.venusAge.value;
     this.marsAge.age = this.age * this.marsAge.value;
     this.jupiterAge.age = this.age * this.jupiterAge.value;
-   // return this.mercuryAge.age;
   }
 
-  // getVenusAge(value) {
-  //   return this.age * value;
-  // }
+  calculateLifeExpectancy() {
+    const lifeExpectancy = this.age * 
+  }
 
-  // getMarsAge(value) {
-  //   return this.age * value;
-  // }
-
-  // getJupiterAge(value) {
-  //   return this.age * value;
-  // }
 }
-
-
-
-
-// export function (side1, side2, side3) {
-//   this.side1 = side1;
-//   this.side2 = side2;
-//   this.side3 = side3;
-// }
-
-// Triangle.prototype.checkType = function() {
-//   return "I can't answer that yet!";
-// };
