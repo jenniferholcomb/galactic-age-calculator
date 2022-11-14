@@ -21,7 +21,7 @@ describe('Calculator', () => {
     expect(calculator.setGalacticAge()).toEqual();
   });
 
-  test('should calculate life expectancy for each planet', () => {
+  test('should calculate life expectancy for user, age 0-100', () => {
     expect(calculator.calculateLifeExpectancy()).toEqual(76.4);
   });
 
