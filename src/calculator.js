@@ -19,15 +19,17 @@ export default class Calculator {
     this.jupiterAge.age = this.age * this.jupiterAge.value;
   }
 
-  // calculateLifeExpectancy(age) {
-  //   if(age <= 10) {
-  //     return (.9 * age) + 62.8;
-  //   } else if(age <= 20) {
-  //     return (.95 * (age-10)) + 53.3;
-  //   } else {
-  //     return "number is higher than 20";
-  //   }
+  calculateLifeExpectancy(age) {
+    let lifeExpectancy = 0;
+    if(age <= 10) {
+      return (.9 * age) + 62.8;
+    } else {
+      lifeExpectancy = ((.95 * (age-10)) + 53.3).toFixed(1);
+     // parseInt(lifeExpectancy);
+      console.log(typeof(lifeExpectancy));
+      return lifeExpectancy;
+    }
 
-  // }
+  }
 
 }
