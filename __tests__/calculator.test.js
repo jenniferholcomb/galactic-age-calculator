@@ -17,13 +17,9 @@ describe('Calculator', () => {
     expect(calculator.setGalacticAge()).toEqual();
   });
 
-  test('should set age property in mercuryAge object within calculator class', () => {
+  test('should set age property in planet objects within calculator class', () => {
     expect(calculator.setGalacticAge()).toEqual();
   });
-
-  // test('should set age property in venusAge object within calculator class', () => {
-  //   expect(calculator.setGalacticAge()).toEqual();
-  // });
   // test('should return user age in Mars years', () => {
   //   expect(calculator.getMarsAge(1.88)).toEqual(94);
   // });
