@@ -12,10 +12,12 @@ export default class Calculator {
     this.age = age;
   }
 
-  // getGalacticAge(age) {
-  //   this.mercuryAge.age = age * this.mercuryAge.value;
-  //  // return this.age * value;
-  // }
+  setGalacticAge(age) {
+    console.log(this.mercuryAge.age);
+    this.mercuryAge.age = age * this.mercuryAge.value;
+    console.log(this.mercuryAge.age);
+    return this.mercuryAge.age;
+  }
 
   // getVenusAge(value) {
   //   return this.age * value;
