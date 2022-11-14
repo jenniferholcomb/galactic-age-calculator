@@ -14,11 +14,11 @@ describe('Calculator', () => {
   });
 
   test('should calculate user age into Galactic years', () => {
-    expect(calculator.getGalacticAge(calculator.mercuryAge.value)).toEqual(12);
+    expect(calculator.getGalacticAge(calculator.age)).toEqual(12);
   });
 
   test('should set age property in mercuryAge object within calculator class', () => {
-     expect(calculator.getGalacticAge(calculator.mercuryAge.age)).toEqual(12);
+     expect(calculator.getGalacticAge()).toEqual(12);
   });
 
   // test('should return user age in Mars years', () => {
