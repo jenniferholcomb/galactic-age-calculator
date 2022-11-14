@@ -21,8 +21,8 @@ describe('Calculator', () => {
     expect(calculator.setGalacticAge()).toEqual();
   });
 
-  test('should calculate life expectancy for user, age 0-100', () => {
-    expect(calculator.calculateLifeExpectancy()).toEqual(76.4);
+  test('should calculate life expectancy for user, age 0-10', () => {
+    expect(calculator.calculateLifeExpectancy(6)).toEqual();
   });
 
   // test('should return user age in Jupiter years', () => {

@@ -20,9 +20,9 @@ export default class Calculator {
   }
 
   calculateLifeExpectancy() {
-    const ageZero = 77;
+    const ageZero = 71.8;
     const ageHundred = 2.3;
-    const lifeExpectancy = this.age * 
+    const lifeExpectancy = this.age * i really don't know
   }
 
 }
