@@ -7,9 +7,13 @@ describe('Calculator', () => {
   beforeEach(() => {
     calculator = new Calculator();
     calculator.setAge(50);
-  })
+  });
 
   test('should set the age property for the calculator object', () => {
     expect(calculator.age).toEqual(50);
-  })
+  });
+
+  test('should return user age in Mercury years', () => {
+
+  });
 });
