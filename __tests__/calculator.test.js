@@ -21,9 +21,8 @@ describe('Calculator', () => {
     expect(calculator.setGalacticAge()).toEqual();
   });
 
-  test('should calculate life expectancy for each planet')
-    let demographic = 
-    expect(calculator.setLifeExpectancy('')).toEqual(94);
+  test('should calculate life expectancy for each planet', () => {
+    expect(calculator.calculateLifeExpectancy()).toEqual(76.4);
   });
 
   // test('should return user age in Jupiter years', () => {
