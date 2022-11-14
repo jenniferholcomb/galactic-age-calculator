@@ -12,9 +12,8 @@ export default class Calculator {
     this.age = age;
   }
 
-  setGalacticAge(age) {
-    console.log(this.mercuryAge.age);
-    this.mercuryAge.age = age * this.mercuryAge.value;
+  setGalacticAge() {
+    this.mercuryAge.age = this.age * this.mercuryAge.value;
     console.log(this.mercuryAge.age);
     return this.mercuryAge.age;
   }
