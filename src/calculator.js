@@ -4,9 +4,9 @@ export default class Calculator {
     this.age = 0;
   }
 
-  // setAge(age) {
-  //   this.age = age;
-  // }
+  setAge(age) {
+    this.age = age;
+  }
 }
 
 
