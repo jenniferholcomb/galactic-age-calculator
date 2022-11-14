@@ -22,7 +22,7 @@ describe('Calculator', () => {
   });
 
   test('should calculate life expectancy for user, age 0-10', () => {
-    expect(calculator.calculateLifeExpectancy(6)).toEqual();
+    expect(calculator.calculateLifeExpectancy(6)).toEqual(68.2);
   });
 
   // test('should return user age in Jupiter years', () => {

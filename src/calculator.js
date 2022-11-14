@@ -19,10 +19,10 @@ export default class Calculator {
     this.jupiterAge.age = this.age * this.jupiterAge.value;
   }
 
-  calculateLifeExpectancy() {
-    const ageZero = 71.8;
-    const ageHundred = 2.3;
-    const lifeExpectancy = this.age * i really don't know
-  }
+  // calculateLifeExpectancy() {
+  //   const ageZero = 71.8;
+  //   const ageHundred = 2.3;
+  //   const lifeExpectancy = this.age * i really don't know
+  // }
 
 }
