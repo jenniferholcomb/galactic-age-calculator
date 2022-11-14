@@ -19,8 +19,15 @@ export default class Calculator {
     this.jupiterAge.age = this.age * this.jupiterAge.value;
   }
 
-  calculateLifeExpectancy(age) {
-    return (.9 * age) + 62.8;
-  }
+  // calculateLifeExpectancy(age) {
+  //   if(age <= 10) {
+  //     return (.9 * age) + 62.8;
+  //   } else if(age <= 20) {
+  //     return (.95 * (age-10)) + 53.3;
+  //   } else {
+  //     return "number is higher than 20";
+  //   }
+
+  // }
 
 }

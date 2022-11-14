@@ -21,11 +21,11 @@ describe('Calculator', () => {
     expect(calculator.setGalacticAge()).toEqual();
   });
 
-  test('should calculate life expectancy for user, age 0-10', () => {
+  test('should calculate life expectancy if user, age 0-10', () => {
     expect(calculator.calculateLifeExpectancy(6)).toEqual(68.2);
   });
 
-  // test('should return user age in Jupiter years', () => {
-  //   expect(calculator.getJupiterAge(11.86)).toEqual(593);
-  // });
+  test('should calculate life expectancy if user, age 11-20', () => {
+    expect(calculator.calculateLifeExpectancy(14)).toEqual(57.1);
+  });
 });
