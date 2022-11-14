@@ -20,9 +20,11 @@ describe('Calculator', () => {
   test('should set age property in planet objects within calculator class', () => {
     expect(calculator.setGalacticAge()).toEqual();
   });
-  // test('should return user age in Mars years', () => {
-  //   expect(calculator.getMarsAge(1.88)).toEqual(94);
-  // });
+
+  test('should calculate life expectancy for each planet')
+    let demographic = 
+    expect(calculator.setLifeExpectancy('')).toEqual(94);
+  });
 
   // test('should return user age in Jupiter years', () => {
   //   expect(calculator.getJupiterAge(11.86)).toEqual(593);
