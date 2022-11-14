@@ -1,5 +1,9 @@
-import Calculator from './../src/js/calculator.js';
+import Calculator from './../src/calculator.js';
 
 describe('Calculator', () => {
-  
+  let calculator;
+
+  beforeEach(() => {
+    calculator = new Calculator();
+  })
 })
