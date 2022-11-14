@@ -14,16 +14,12 @@ describe('Calculator', () => {
   });
 
   test('should return user age in Galactic years', () => {
-    const mercury = .24;
-    const venus = .62;
-    const mars = 1.88;
-    const jupiter = 11.86;
-    expect(calculator.getGalacticAge(mercury)).toEqual(12);
+    expect(calculator.getGalacticAge(this.mercuryAge.value)).toEqual(12);
   });
 
-  test('should return user age in Venus years', () => {
-     expect(calculator.getVenusAge(.62)).toEqual(31);
-  });
+  // test('should return user age in Venus years', () => {
+  //    expect(calculator.getVenusAge(.62)).toEqual(31);
+  // });
 
   // test('should return user age in Mars years', () => {
   //   expect(calculator.getMarsAge(1.88)).toEqual(94);
