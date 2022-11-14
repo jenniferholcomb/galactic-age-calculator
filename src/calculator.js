@@ -11,6 +11,10 @@ export default class Calculator {
   getMercuryAge(value) {
     return this.age * value;
   }
+
+  getVenusAge(value) {
+    return this.age * value;
+  }
 }
 
 
