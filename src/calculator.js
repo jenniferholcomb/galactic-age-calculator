@@ -8,7 +8,9 @@ export default class Calculator {
     this.age = age;
   }
 
-  
+  getMercuryAge(value) {
+    return this.age * value;
+  }
 }
 
 
