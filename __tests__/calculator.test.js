@@ -28,4 +28,8 @@ describe('Calculator', () => {
   test('should calculate life expectancy if user, age 11-20', () => {
     expect(calculator.calculateLifeExpectancy(14)).toEqual(57.1);
   });
+
+  test('should calculate life expectancy if user, age 21-30', () => {
+    expect(calculator.calculateLifeExpectancy(27)).toEqual(50.5);
+  });
 });
