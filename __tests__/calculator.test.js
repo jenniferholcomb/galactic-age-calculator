@@ -61,4 +61,8 @@ describe('Calculator', () => {
     expect(calculator.calculateLifeExpectancy(97)).toEqual(3.4);
   });
 
+  test('should set life expectancy property in calculator object', () => {
+    expect(calculator.calculateLifeExpectancy(87)).toEqual(6.1);
+  })
+
 });
