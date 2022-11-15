@@ -67,19 +67,19 @@ export default class Calculator {
   setVenAge(age) {
     this.venusAge.age = age * this.venusAge.value;
     this.venusAge.lifeEx = parseFloat(((this.calculateLifeExpectancy(age)) * this.venusAge.value).toFixed(1));
-    console.log(this.venusAge.lifeEx);
     return this.venusAge.age;
   }
 
   setMarAge(age) {
     this.marsAge.age = age * this.marsAge.value;
     this.marsAge.lifeEx = parseFloat(((this.calculateLifeExpectancy(age)) * this.marsAge.value).toFixed(1));
-    console.log(this.marsAge.lifeEx);
     return this.marsAge.age;
   }
 
   setJupAge(age) {
     this.jupiterAge.age = age * this.jupiterAge.value;
+    this.jupiterAge.lifeEx = parseFloat(((this.calculateLifeExpectancy(age)) * this.jupiterAge.value).toFixed(1));
+    console.log(this.jupiterAge.lifeEx);
     return this.jupiterAge.age;
   }
 
