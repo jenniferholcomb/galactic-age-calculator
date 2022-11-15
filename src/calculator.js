@@ -93,9 +93,12 @@ export default class Calculator {
 
   setJupAge(age) {
     this.jupiterAge.age = parseFloat((age * this.jupiterAge.value).toFixed(1));
-    console.log(this.jupiterAge.age);
     this.jupiterAge.lifeEx = parseFloat(((this.calculateLifeExpectancy(age)) * this.jupiterAge.value).toFixed(1));
+    const birthEx = parseFloat((71.8 * this.jupiterAge.value).toFixed(1)); 
+    if(this.jupiterAge.age > birthEx) {
+      let pastEx = parseFloat((this.jupiterAge.age - birthEx).toFixed(1));
+      return pastEx;
+    }
     return this.jupiterAge.age;
   }
-
 }
