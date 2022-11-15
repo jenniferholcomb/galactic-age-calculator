@@ -61,6 +61,11 @@ export default class Calculator {
   setMerAge(age) {
     this.mercuryAge.age = age * this.mercuryAge.value;
     this.mercuryAge.lifeEx = parseFloat(((this.calculateLifeExpectancy(age)) * this.mercuryAge.value).toFixed(1));
+    if(this.mercuryAge.age > (71.8 * this.mercuryAge.value)) {
+      
+    }
+    // console.log(this.mercuryAge.age);
+    // console.log(71.8 * this.mercuryAge.value);
     return this.mercuryAge.age;
   }
 
@@ -79,7 +84,6 @@ export default class Calculator {
   setJupAge(age) {
     this.jupiterAge.age = age * this.jupiterAge.value;
     this.jupiterAge.lifeEx = parseFloat(((this.calculateLifeExpectancy(age)) * this.jupiterAge.value).toFixed(1));
-    console.log(this.jupiterAge.lifeEx);
     return this.jupiterAge.age;
   }
 
