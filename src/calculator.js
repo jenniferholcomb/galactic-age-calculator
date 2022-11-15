@@ -84,6 +84,11 @@ export default class Calculator {
     this.marsAge.age = parseFloat((age * this.marsAge.value).toFixed(1));
     console.log(this.marsAge.age);
     this.marsAge.lifeEx = parseFloat(((this.calculateLifeExpectancy(age)) * this.marsAge.value).toFixed(1));
+    const birthEx = parseFloat((71.8 * this.marsAge.value).toFixed(1));   
+    if(this.marsAge.age > birthEx) {
+      let pastEx = parseFloat((this.marsAge.age - birthEx).toFixed(1));
+      return pastEx;
+    }
     return this.marsAge.age;
   }
 
