@@ -101,4 +101,7 @@ describe('Calculator', () => {
     expect(calculator.setJupAge(calculator.age)).toEqual(4);
   });
 
+  test('should return number of years past life expectancy at birth for planet Jupiter, if user is older than that age', () => {
+    expect(calculator.setJupAge(89)).toEqual(1.4);
+  });
 });

@@ -82,7 +82,6 @@ export default class Calculator {
 
   setMarAge(age) {
     this.marsAge.age = parseFloat((age * this.marsAge.value).toFixed(1));
-    console.log(this.marsAge.age);
     this.marsAge.lifeEx = parseFloat(((this.calculateLifeExpectancy(age)) * this.marsAge.value).toFixed(1));
     const birthEx = parseFloat((71.8 * this.marsAge.value).toFixed(1));   
     if(this.marsAge.age > birthEx) {
@@ -93,7 +92,8 @@ export default class Calculator {
   }
 
   setJupAge(age) {
-    this.jupiterAge.age = age * this.jupiterAge.value;
+    this.jupiterAge.age = parseFloat((age * this.jupiterAge.value).toFixed(1));
+    console.log(this.jupiterAge.age);
     this.jupiterAge.lifeEx = parseFloat(((this.calculateLifeExpectancy(age)) * this.jupiterAge.value).toFixed(1));
     return this.jupiterAge.age;
   }
