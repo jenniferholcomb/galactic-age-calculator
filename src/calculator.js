@@ -13,10 +13,25 @@ export default class Calculator {
     this.age = age;
   }
 
-  // setMerAge(age) {
-  //   this.mercuryAge.age = age * this.mercuryAge.value;
-  //   return this.mercuryAge.age;
-  // }
+  setMerAge(age) {
+    this.mercuryAge.age = age * this.mercuryAge.value;
+    return this.mercuryAge.age;
+  }
+
+  setVenAge(age) {
+    this.venusAge.age = age * this.venusAge.value;
+    return this.venusAge.age;
+  }
+
+  setMarAge(age) {
+    this.marsAge.age = age * this.marsAge.value;
+    return this.marsAge.age;
+  }
+
+  setJupAge(age) {
+    this.jupiterAge.age = age * this.jupiterAge.value;
+    return this.jupiterAge.age;
+  }
   // setGalacticAge() {
   //   this.mercuryAge.age = this.age * this.mercuryAge.value;
   //   this.venusAge.age = this.age * this.venusAge.value;
