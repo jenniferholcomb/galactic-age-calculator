@@ -60,6 +60,8 @@ export default class Calculator {
 
   setMerAge(age) {
     this.mercuryAge.age = age * this.mercuryAge.value;
+    this.mercuryAge.lifeEx = parseFloat(((this.calculateLifeExpectancy(age)) * this.mercuryAge.value).toFixed(1));
+    console.log(this.mercuryAge.lifeEx);
     return this.mercuryAge.age;
   }
 
