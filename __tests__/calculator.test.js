@@ -89,6 +89,10 @@ describe('Calculator', () => {
     expect(calculator.setMarAge(calculator.age)).toEqual(26.5);
   });
 
+  test('should return number of years past life expectancy at birth for planet Mars, if user is older than that age', () => {
+    expect(calculator.setMarAge(89)).toEqual(9.1);
+  });
+
   test('should return calculated user age into Jupiter years', () => {
     expect(calculator.setJupAge(calculator.age)).toEqual(4);
   });
