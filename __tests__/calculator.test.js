@@ -77,6 +77,10 @@ describe('Calculator', () => {
     expect(calculator.setVenAge(calculator.age)).toEqual(80.5);
   });
 
+  test('should return number of years past life expectancy at birth for planet Venus, if user is older than that age', () => {
+    expect(calculator.setVenAge(89)).toEqual(27.7);
+  });
+
   test('should return calculated user age into Mars years', () => {
     expect(calculator.setMarAge(calculator.age)).toEqual(26.5);
   });

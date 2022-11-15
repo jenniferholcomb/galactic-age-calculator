@@ -66,14 +66,20 @@ export default class Calculator {
       let pastEx = parseFloat((this.mercuryAge.age - birthEx).toFixed(1));
       return pastEx;
     }
-    // console.log(this.mercuryAge.age);
-    // console.log(71.8 * this.mercuryAge.value);
     return this.mercuryAge.age;
   }
 
   setVenAge(age) {
-    this.venusAge.age = age * this.venusAge.value;
+    this.venusAge.age = parseFloat((age * this.venusAge.value).toFixed(1));
+    console.log(this.venusAge.age);
     this.venusAge.lifeEx = parseFloat(((this.calculateLifeExpectancy(age)) * this.venusAge.value).toFixed(1));
+    console.log(this.venusAge.lifeEx);
+    const birthEx = parseFloat((71.8 * this.venusAge.value).toFixed(1));
+    console.log(birthEx);
+    if(this.venusAge.age > birthEx) {
+      let pastEx = parseFloat((this.venusAge.age - birthEx).toFixed(1));
+      return pastEx;
+    }
     return this.venusAge.age;
   }
 
