@@ -69,12 +69,24 @@ describe('Calculator', () => {
     expect(calculator.setVenAge(calculator.age)).toEqual(80.5);
   });
 
+  test('should calculate and set user life expectancy for planet Venus', () => {
+    expect(calculator.setVenAge(calculator.age)).toEqual(80.5);
+  })
+
   test('should return calculated user age into Mars years', () => {
     expect(calculator.setMarAge(calculator.age)).toEqual(26.5);
   });
 
+  test('should calculate and set user life expectancy for planet Mars', () => {
+    expect(calculator.setMarAge(calculator.age)).toEqual(26.5);
+  })
+
   test('should return calculated user age into Jupiter years', () => {
     expect(calculator.setJupAge(calculator.age)).toEqual(4);
   });
+
+  test('should calculate and set user life expectancy for planet Jupiter', () => {
+    expect(calculator.setJupAge(calculator.age)).toEqual(4);
+  })
 
 });
