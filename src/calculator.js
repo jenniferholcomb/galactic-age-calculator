@@ -13,6 +13,10 @@ export default class Calculator {
     this.age = age;
   }
 
+  // setMerAge(age) {
+  //   this.mercuryAge.age = age * this.mercuryAge.value;
+  //   return this.mercuryAge.age;
+  // }
   // setGalacticAge() {
   //   this.mercuryAge.age = this.age * this.mercuryAge.value;
   //   this.venusAge.age = this.age * this.venusAge.value;

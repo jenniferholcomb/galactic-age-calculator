@@ -18,15 +18,15 @@ describe('Calculator', () => {
   });
 
   test('should return calculated user age into Venus years', () => {
-    expect(calculator.setMerAge(calculator.age)).toEqual(80.5);
+    expect(calculator.setVenAge(calculator.age)).toEqual(80.5);
   });
 
   test('should return calculated user age into Mars years', () => {
-    expect(calculator.setMerAge(calculator.age)).toEqual(26.5);
+    expect(calculator.setMarAge(calculator.age)).toEqual(26.5);
   });
 
   test('should return calculated user age into Jupiter years', () => {
-    expect(calculator.setMerAge(calculator.age)).toEqual(4);
+    expect(calculator.setJupAge(calculator.age)).toEqual(4);
   });
 
   // test('should set age property in planet objects within calculator class', () => {
