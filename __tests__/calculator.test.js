@@ -65,4 +65,8 @@ describe('Calculator', () => {
     expect(calculator.calculateLifeExpectancy(87)).toEqual(6.1);
   })
 
+  // test('should calculate life expectancy for planet Mercury', () => {
+  //   expect(calculator.getMerLifeEx(age)).toEqual()
+  // })
+
 });
