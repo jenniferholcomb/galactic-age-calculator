@@ -61,9 +61,9 @@ describe('Calculator', () => {
     expect(calculator.setMerAge(calculator.age)).toEqual(208.5);
   });
 
-  // test('should calculate user life expectancy for planet Mercury', () => {
-  //   expect(calculator.setM(calculator.age)).toEqual()
-  // })
+  test('should calculate and set user life expectancy for planet Mercury', () => {
+    expect(calculator.setMerAge()).toEqual();
+  })
 
   test('should return calculated user age into Venus years', () => {
     expect(calculator.setVenAge(calculator.age)).toEqual(80.5);
