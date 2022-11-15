@@ -22,7 +22,7 @@ describe('Calculator', () => {
   });
 
   test('should calculate life expectancy if user, age 21-30', () => {
-    expect(calculator.calculateLifeExpectancy(27)).toEqual(73.4);
+    expect(calculator.calculateLifeExpectancy(27)).toEqual(73.9);
   });
 
   test('should calculate life expectancy if user, age 31-40', () => {
@@ -46,7 +46,7 @@ describe('Calculator', () => {
   });
 
   test('should calculate life expectancy if user, age 81-90', () => {
-    expect(calculator.calculateLifeExpectancy(87)).toEqual(91.2);
+    expect(calculator.calculateLifeExpectancy(87)).toEqual(91.9);
   });
 
   test('should calculate life expectancy if user, age 91-100', () => {
@@ -54,7 +54,7 @@ describe('Calculator', () => {
   });
 
   test('should set life expectancy property in calculator object', () => {
-    expect(calculator.calculateLifeExpectancy(87)).toEqual(6.1);
+    expect(calculator.calculateLifeExpectancy(87)).toEqual(91.9);
   })
 
   test('should return calculated user age into Mercury years', () => {

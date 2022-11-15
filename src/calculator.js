@@ -13,50 +13,50 @@ export default class Calculator {
     this.age = age;
   }
 
-  // calculateLifeExpectancy(age) {
-  //   let lifeValue = this.lifeExpectancy;
-  //   if(age <= 10) {
-  //     lifeValue = parseFloat(((.9 * age) + 62.8).toFixed(1));
-  //     this.lifeExpectancy = lifeValue;
-  //     return lifeValue;
-  //   } else if(age <= 20) {
-  //     lifeValue = parseFloat(((.95 * (age-10)) + 53.3).toFixed(1));
-  //     this.lifeExpectancy = lifeValue;
-  //     return lifeValue;
-  //   } else if(age <= 30) {
-  //     lifeValue = parseFloat(((.92 * (age-20)) + 44.1).toFixed(1));
-  //     this.lifeExpectancy = lifeValue;
-  //     return lifeValue;
-  //   } else if(age <= 40) {
-  //     lifeValue = parseFloat(((.9 * (age-30)) + 35.1).toFixed(1));
-  //     this.lifeExpectancy = lifeValue;
-  //     return lifeValue;
-  //   } else if(age <= 50) {
-  //     lifeValue = parseFloat(((.87 * (age-40)) + 26.4).toFixed(1));
-  //     this.lifeExpectancy = lifeValue;
-  //     return lifeValue;
-  //   } else if(age <= 60) {
-  //     lifeValue = parseFloat(((.79 * (age-50)) + 18.5).toFixed(1));
-  //     this.lifeExpectancy = lifeValue;
-  //     return lifeValue;
-  //   } else if(age <= 70) {
-  //     lifeValue = parseFloat(((.65 * (age-60)) + 12).toFixed(1));
-  //     this.lifeExpectancy = lifeValue;
-  //     return lifeValue;
-  //   } else if(age <= 80) {
-  //     lifeValue = parseFloat(((.49 * (age-70)) + 7.1).toFixed(1));
-  //     this.lifeExpectancy = lifeValue;
-  //     return lifeValue;
-  //   } else if(age <= 90) {
-  //     lifeValue = parseFloat(((.32 * (age-80)) + 3.9).toFixed(1));
-  //     this.lifeExpectancy = lifeValue;
-  //     return lifeValue;
-  //   } else {
-  //     lifeValue = parseFloat(((.16 * (age-90)) + 2.3).toFixed(1));
-  //     this.lifeExpectancy = lifeValue;
-  //     return lifeValue;
-  //   }
-  // }
+  calculateLifeExpectancy(age) {
+    let lifeValue = this.lifeExpectancy;
+    if(age <= 10) {
+      lifeValue = parseFloat(((.009 * age) + 71.8).toFixed(1));
+      this.lifeExpectancy = lifeValue;
+      return lifeValue;
+    } else if(age <= 20) {
+      lifeValue = parseFloat(((.05 * (age-10)) + 72.8).toFixed(1));
+      this.lifeExpectancy = lifeValue;
+      return lifeValue;
+    } else if(age <= 30) {
+      lifeValue = parseFloat(((.08 * (age-20)) + 73.3).toFixed(1));
+      this.lifeExpectancy = lifeValue;
+      return lifeValue;
+    } else if(age <= 40) {
+      lifeValue = parseFloat(((.01 * (age-30)) + 74.1).toFixed(1));
+      this.lifeExpectancy = lifeValue;
+      return lifeValue;
+    } else if(age <= 50) {
+      lifeValue = parseFloat(((.13 * (age-40)) + 75.1).toFixed(1));
+      this.lifeExpectancy = lifeValue;
+      return lifeValue;
+    } else if(age <= 60) {
+      lifeValue = parseFloat(((.11 * (age-50)) + 76.4).toFixed(1));
+      this.lifeExpectancy = lifeValue;
+      return lifeValue;
+    } else if(age <= 70) {
+      lifeValue = parseFloat(((.35 * (age-60)) + 78.5).toFixed(1));
+      this.lifeExpectancy = lifeValue;
+      return lifeValue;
+    } else if(age <= 80) {
+      lifeValue = parseFloat(((.51 * (age-70)) + 82).toFixed(1));
+      this.lifeExpectancy = lifeValue;
+      return lifeValue;
+    } else if(age <= 90) {
+      lifeValue = parseFloat(((.68 * (age-80)) + 87.1).toFixed(1));
+      this.lifeExpectancy = lifeValue;
+      return lifeValue;
+    } else {
+      lifeValue = parseFloat(((.84 * (age-90)) + 93.9).toFixed(1));
+      this.lifeExpectancy = lifeValue;
+      return lifeValue;
+    }
+  }
 
   setMerAge(age) {
     this.mercuryAge.age = age * this.mercuryAge.value;
