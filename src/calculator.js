@@ -22,10 +22,13 @@ export default class Calculator {
   calculateLifeExpectancy(age) {
     let lifeExpectancy = 0;
     if(age <= 10) {
-      lifeExpectancy = (.9 * age) + 62.8;
+      lifeExpectancy = parseFloat(((.9 * age) + 62.8).toFixed(1));
+      return lifeExpectancy;
+    } else if(age <= 20) {
+      lifeExpectancy = parseFloat(((.95 * (age-10)) + 53.3).toFixed(1));
       return lifeExpectancy;
     } else {
-      lifeExpectancy = parseFloat(((.95 * (age-10)) + 53.3).toFixed(1));
+      lifeExpectancy = parseFloat(((.92 * (age-20)) + 44.1).toFixed(1));
       return lifeExpectancy;
     }
 

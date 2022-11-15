@@ -32,4 +32,33 @@ describe('Calculator', () => {
   test('should calculate life expectancy if user, age 21-30', () => {
     expect(calculator.calculateLifeExpectancy(27)).toEqual(50.5);
   });
+
+  test('should calculate life expectancy if user, age 31-40', () => {
+    expect(calculator.calculateLifeExpectancy(37)).toEqual(41.4);
+  });
+
+  test('should calculate life expectancy if user, age 41-50', () => {
+    expect(calculator.calculateLifeExpectancy(47)).toEqual(32.5);
+  });
+
+  test('should calculate life expectancy if user, age 51-60', () => {
+    expect(calculator.calculateLifeExpectancy(57)).toEqual(24.0);
+  });
+
+  test('should calculate life expectancy if user, age 61-70', () => {
+    expect(calculator.calculateLifeExpectancy(67)).toEqual(16.6);
+  });
+
+  test('should calculate life expectancy if user, age 71-80', () => {
+    expect(calculator.calculateLifeExpectancy(77)).toEqual(10.5);
+  });
+
+  test('should calculate life expectancy if user, age 81-90', () => {
+    expect(calculator.calculateLifeExpectancy(87)).toEqual(6.1);
+  });
+
+  test('should calculate life expectancy if user, age 91-100', () => {
+    expect(calculator.calculateLifeExpectancy(97)).toEqual(3.4);
+  });
+
 });
