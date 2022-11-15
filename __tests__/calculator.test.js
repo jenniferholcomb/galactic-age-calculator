@@ -13,9 +13,57 @@ describe('Calculator', () => {
     expect(calculator.age).toEqual(50);
   });
 
+  test('should calculate life expectancy if user, age 0-10', () => {
+    expect(calculator.calculateLifeExpectancy(6)).toEqual(71.9);
+  });
+
+  test('should calculate life expectancy if user, age 11-20', () => {
+    expect(calculator.calculateLifeExpectancy(14)).toEqual(73);
+  });
+
+  test('should calculate life expectancy if user, age 21-30', () => {
+    expect(calculator.calculateLifeExpectancy(27)).toEqual(73.4);
+  });
+
+  test('should calculate life expectancy if user, age 31-40', () => {
+    expect(calculator.calculateLifeExpectancy(37)).toEqual(74.2);
+  });
+
+  test('should calculate life expectancy if user, age 41-50', () => {
+    expect(calculator.calculateLifeExpectancy(47)).toEqual(76.0);
+  });
+
+  test('should calculate life expectancy if user, age 51-60', () => {
+    expect(calculator.calculateLifeExpectancy(57)).toEqual(77.2);
+  });
+
+  test('should calculate life expectancy if user, age 61-70', () => {
+    expect(calculator.calculateLifeExpectancy(67)).toEqual(81.0);
+  });
+
+  test('should calculate life expectancy if user, age 71-80', () => {
+    expect(calculator.calculateLifeExpectancy(77)).toEqual(85.6);
+  });
+
+  test('should calculate life expectancy if user, age 81-90', () => {
+    expect(calculator.calculateLifeExpectancy(87)).toEqual(91.2);
+  });
+
+  test('should calculate life expectancy if user, age 91-100', () => {
+    expect(calculator.calculateLifeExpectancy(97)).toEqual(99.8);
+  });
+
+  test('should set life expectancy property in calculator object', () => {
+    expect(calculator.calculateLifeExpectancy(87)).toEqual(6.1);
+  })
+
   test('should return calculated user age into Mercury years', () => {
     expect(calculator.setMerAge(calculator.age)).toEqual(208.5);
   });
+
+  // test('should calculate user life expectancy for planet Mercury', () => {
+  //   expect(calculator.setM(calculator.age)).toEqual()
+  // })
 
   test('should return calculated user age into Venus years', () => {
     expect(calculator.setVenAge(calculator.age)).toEqual(80.5);
@@ -28,57 +76,5 @@ describe('Calculator', () => {
   test('should return calculated user age into Jupiter years', () => {
     expect(calculator.setJupAge(calculator.age)).toEqual(4);
   });
-
-  // test('should set age property in planet objects within calculator class', () => {
-  //   expect(calculator.setGalacticAge()).toEqual();
-  // });
-
-  test('should calculate life expectancy if user, age 0-10', () => {
-    expect(calculator.calculateLifeExpectancy(6)).toEqual(68.2);
-  });
-
-  test('should calculate life expectancy if user, age 11-20', () => {
-    expect(calculator.calculateLifeExpectancy(14)).toEqual(57.1);
-  });
-
-  test('should calculate life expectancy if user, age 21-30', () => {
-    expect(calculator.calculateLifeExpectancy(27)).toEqual(50.5);
-  });
-
-  test('should calculate life expectancy if user, age 31-40', () => {
-    expect(calculator.calculateLifeExpectancy(37)).toEqual(41.4);
-  });
-
-  test('should calculate life expectancy if user, age 41-50', () => {
-    expect(calculator.calculateLifeExpectancy(47)).toEqual(32.5);
-  });
-
-  test('should calculate life expectancy if user, age 51-60', () => {
-    expect(calculator.calculateLifeExpectancy(57)).toEqual(24.0);
-  });
-
-  test('should calculate life expectancy if user, age 61-70', () => {
-    expect(calculator.calculateLifeExpectancy(67)).toEqual(16.6);
-  });
-
-  test('should calculate life expectancy if user, age 71-80', () => {
-    expect(calculator.calculateLifeExpectancy(77)).toEqual(10.5);
-  });
-
-  test('should calculate life expectancy if user, age 81-90', () => {
-    expect(calculator.calculateLifeExpectancy(87)).toEqual(6.1);
-  });
-
-  test('should calculate life expectancy if user, age 91-100', () => {
-    expect(calculator.calculateLifeExpectancy(97)).toEqual(3.4);
-  });
-
-  test('should set life expectancy property in calculator object', () => {
-    expect(calculator.calculateLifeExpectancy(87)).toEqual(6.1);
-  })
-
-  // test('should calculate life expectancy for planet Mercury', () => {
-  //   expect(calculator.getMerLifeEx(age)).toEqual()
-  // })
 
 });
