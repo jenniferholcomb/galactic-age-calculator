@@ -73,6 +73,8 @@ export default class Calculator {
 
   setMarAge(age) {
     this.marsAge.age = age * this.marsAge.value;
+    this.marsAge.lifeEx = parseFloat(((this.calculateLifeExpectancy(age)) * this.marsAge.value).toFixed(1));
+    console.log(this.marsAge.lifeEx);
     return this.marsAge.age;
   }
 
