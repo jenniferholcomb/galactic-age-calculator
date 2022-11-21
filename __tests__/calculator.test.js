@@ -66,7 +66,11 @@ describe('Calculator', () => {
   });
 
   test('should return number of years past life expectancy at birth for planet Mercury, if user is older than that age', () => {
-    expect(calculator.setMerAge(89)).toEqual(71.7);
+    expect(calculator.getLifeExpectancy(89)).toEqual(71.7);
+  });
+
+  test('should return number of years left to live on planet Mercury, if user is younger than life expectancy at birth', () => {
+    expect(calculator.getLifeExpectancy(65)).toEqual(28.3);
   });
 
   test('should return calculated user age into Venus years', () => {

@@ -60,12 +60,18 @@ export default class Calculator {
 
   setMerAge(age) {
     this.mercuryAge.age = parseFloat((age * this.mercuryAge.value).toFixed(1));
+    // 89 * 4.17 = 371.1
+    // 65 * 4.17 = 271.1
     this.mercuryAge.lifeEx = parseFloat(((this.calculateLifeExpectancy(age)) * this.mercuryAge.value).toFixed(1));
-    const birthEx = parseFloat((71.8 * this.mercuryAge.value).toFixed(1));
-    if(this.mercuryAge.age > birthEx) {
-      let pastEx = parseFloat((this.mercuryAge.age - birthEx).toFixed(1));
-      return pastEx;
-    }
+    // 388.6 = 93.2 * 4.17
+    // const birthEx = parseFloat((71.8 * this.mercuryAge.value).toFixed(1));
+    // // 71.8 * 4.17 = 299.4
+    // console.log(birthEx);
+    // if(this.mercuryAge.age > birthEx) {
+    //   let pastEx = parseFloat((this.mercuryAge.age - birthEx).toFixed(1));
+    //   return pastEx;
+    //   // 371.1 - 299.4 = 71.7
+    // }
     return this.mercuryAge.age;
   }
 
