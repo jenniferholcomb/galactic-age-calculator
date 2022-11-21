@@ -4,9 +4,9 @@ export default class Calculator {
     this.age = 0;
     this.lifeExpectancy = 0;
     this.mercuryAge = {value: 4.17, age: 0, lifeEx: 0, yearsLive: 0};
-    this.venusAge = {value: 1.61, age: 0, lifeEx: 0};
-    this.marsAge = {value: .53, age: 0, lifeEx: 0};
-    this.jupiterAge = {value: .08, age: 0, lifeEx: 0};
+    this.venusAge = {value: 1.61, age: 0, lifeEx: 0, yearsLive: 0};
+    this.marsAge = {value: .53, age: 0, lifeEx: 0, yearsLive: 0};
+    this.jupiterAge = {value: .08, age: 0, lifeEx: 0, yearsLive: 0};
   }
 
   setAge(age) {
