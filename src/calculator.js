@@ -3,7 +3,7 @@ export default class Calculator {
   constructor() {
     this.age = 0;
     this.lifeExpectancy = 0;
-    this.mercuryAge = {value: 4.17, age: 0, lifeEx: 0};
+    this.mercuryAge = {value: 4.17, age: 0, lifeEx: 0, yearsLive: 0};
     this.venusAge = {value: 1.61, age: 0, lifeEx: 0};
     this.marsAge = {value: .53, age: 0, lifeEx: 0};
     this.jupiterAge = {value: .08, age: 0, lifeEx: 0};
@@ -58,20 +58,21 @@ export default class Calculator {
     }
   }
 
+  getLifeExpectancy(age, birthEx) {
+    if(age >= birthEx) {
+      let pastEx = parseFloat((age - birthEx).toFixed(1));
+      return pastEx;
+    } else {
+      let yearsLive = parseFloat((birthEx - age).toFixed(1));
+      return yearsLive;
+    }
+  }
+
   setMerAge(age) {
     this.mercuryAge.age = parseFloat((age * this.mercuryAge.value).toFixed(1));
-    // 89 * 4.17 = 371.1
-    // 65 * 4.17 = 271.1
     this.mercuryAge.lifeEx = parseFloat(((this.calculateLifeExpectancy(age)) * this.mercuryAge.value).toFixed(1));
-    // 388.6 = 93.2 * 4.17
-    // const birthEx = parseFloat((71.8 * this.mercuryAge.value).toFixed(1));
-    // // 71.8 * 4.17 = 299.4
-    // console.log(birthEx);
-    // if(this.mercuryAge.age > birthEx) {
-    //   let pastEx = parseFloat((this.mercuryAge.age - birthEx).toFixed(1));
-    //   return pastEx;
-    //   // 371.1 - 299.4 = 71.7
-    // }
+    const birthEx = parseFloat((71.8 * this.mercuryAge.value).toFixed(1));
+    this.mercuryAge.yearsLive = this.getLifeExpectancy(this.mercuryAge.age, birthEx);
     return this.mercuryAge.age;
   }
 
@@ -79,10 +80,7 @@ export default class Calculator {
     this.venusAge.age = parseFloat((age * this.venusAge.value).toFixed(1));
     this.venusAge.lifeEx = parseFloat(((this.calculateLifeExpectancy(age)) * this.venusAge.value).toFixed(1));
     const birthEx = parseFloat((71.8 * this.venusAge.value).toFixed(1));
-    if(this.venusAge.age > birthEx) {
-      let pastEx = parseFloat((this.venusAge.age - birthEx).toFixed(1));
-      return pastEx;
-    }
+    this.venusAge.yearsLive = this.getLifeExpectancy(this.venusAge.age, birthEx);
     return this.venusAge.age;
   }
 
@@ -90,10 +88,7 @@ export default class Calculator {
     this.marsAge.age = parseFloat((age * this.marsAge.value).toFixed(1));
     this.marsAge.lifeEx = parseFloat(((this.calculateLifeExpectancy(age)) * this.marsAge.value).toFixed(1));
     const birthEx = parseFloat((71.8 * this.marsAge.value).toFixed(1));   
-    if(this.marsAge.age > birthEx) {
-      let pastEx = parseFloat((this.marsAge.age - birthEx).toFixed(1));
-      return pastEx;
-    }
+    this.marsAge.yearsLive = this.getLifeExpectancy(this.marsAge.age, birthEx);
     return this.marsAge.age;
   }
 
@@ -101,10 +96,7 @@ export default class Calculator {
     this.jupiterAge.age = parseFloat((age * this.jupiterAge.value).toFixed(1));
     this.jupiterAge.lifeEx = parseFloat(((this.calculateLifeExpectancy(age)) * this.jupiterAge.value).toFixed(1));
     const birthEx = parseFloat((71.8 * this.jupiterAge.value).toFixed(1)); 
-    if(this.jupiterAge.age > birthEx) {
-      let pastEx = parseFloat((this.jupiterAge.age - birthEx).toFixed(1));
-      return pastEx;
-    }
+    this.jupiterAge.yearsLive = this.getLifeExpectancy(this.jupiterAge.age, birthEx);
     return this.jupiterAge.age;
   }
 }
